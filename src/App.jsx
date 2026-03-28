@@ -121,7 +121,11 @@ import './App.css'
 // export default App
 
 function Square({ value }) {
-  return <button className="square">{ value }</button>;
+  function handleClick() {
+    console.log({value}, 'clicked!');
+  }
+
+  return <button className="square" onClick={handleClick}>{ value }</button>;
 }
 
 export default function Board() {
