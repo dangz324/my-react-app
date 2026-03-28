@@ -120,7 +120,10 @@ import './App.css'
 
 // export default App
 
-function Square({ value }) {
+//usestate imported at top
+
+function Square() {
+  const [value, setValue] = useState(null);
   function handleClick() {
     console.log({value}, 'clicked!');
   }
